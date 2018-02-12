@@ -29,8 +29,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nrz-fI-Njc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GJ-Ce-brK" userLabel="Question Label">
-                                        <rect key="frame" x="16" y="28" width="343" height="290"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GJ-Ce-brK" userLabel="Question Label">
+                                        <rect key="frame" x="16" y="28" width="343" height="210"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -89,34 +89,17 @@
                                     <constraint firstAttribute="right" secondItem="c0R-Fj-fUI" secondAttribute="right" constant="8" id="kra-GC-qQe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-Ly-TJ0" userLabel="Lower Contianer">
-                                <rect key="frame" x="0.0" y="345" width="375" height="275"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-Ly-TJ0" userLabel="Lower Contianer">
+                                <rect key="frame" x="0.0" y="252" width="375" height="398"/>
                                 <subviews>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5N-xc-sVz" userLabel="Takeoff Button">
-                                        <rect key="frame" x="202" y="89" width="155.5" height="56"/>
-                                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Takeoff">
-                                            <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="answerPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ML-SG-qL1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exB-ZS-1U0" userLabel="Offset Button">
-                                        <rect key="frame" x="31" y="89" width="155.5" height="56"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exB-ZS-1U0" userLabel="Offset Button">
+                                        <rect key="frame" x="8" y="40" width="160" height="160"/>
                                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="AKm-GO-sy5"/>
-                                            <constraint firstAttribute="height" constant="56" id="J5O-KN-3m1"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="J5O-KN-3m1"/>
                                         </constraints>
-                                        <state key="normal" title="Offset">
+                                        <state key="normal" title="Offset" image="offset">
                                             <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -130,11 +113,27 @@
                                             <action selector="answerPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E6e-2f-z0q"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJJ-lv-gW6" userLabel="Quavo Button">
-                                        <rect key="frame" x="110" y="181" width="155.5" height="56"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5N-xc-sVz" userLabel="Takeoff Button">
+                                        <rect key="frame" x="198" y="40" width="160" height="160"/>
                                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Quavo">
+                                        <state key="normal" title="Takeoff" image="takeoff">
+                                            <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ML-SG-qL1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJJ-lv-gW6" userLabel="Quavo Button">
+                                        <rect key="frame" x="107" y="238" width="160" height="160"/>
+                                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Quavo" image="quavo">
                                             <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -151,13 +150,17 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.16847139596939087" green="0.51802176237106323" blue="0.82454192638397217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="OJJ-lv-gW6" firstAttribute="centerX" secondItem="lYI-Ly-TJ0" secondAttribute="centerX" id="9jR-d3-rWw"/>
+                                    <constraint firstItem="OJJ-lv-gW6" firstAttribute="height" secondItem="T5N-xc-sVz" secondAttribute="height" id="Eeo-mN-rJz"/>
                                     <constraint firstAttribute="right" secondItem="T5N-xc-sVz" secondAttribute="right" constant="25" id="OPX-As-oBh"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="centerY" secondItem="lYI-Ly-TJ0" secondAttribute="centerY" id="U2R-9n-8Yj"/>
+                                    <constraint firstItem="OJJ-lv-gW6" firstAttribute="width" secondItem="T5N-xc-sVz" secondAttribute="width" id="X4k-RD-5Xl"/>
                                     <constraint firstItem="T5N-xc-sVz" firstAttribute="centerY" secondItem="lYI-Ly-TJ0" secondAttribute="centerY" id="X68-aS-4q0"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="left" secondItem="lYI-Ly-TJ0" secondAttribute="left" constant="25" id="aCu-qw-v0d"/>
                                     <constraint firstItem="T5N-xc-sVz" firstAttribute="leading" secondItem="exB-ZS-1U0" secondAttribute="trailing" constant="14" id="bNV-7U-rae"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="width" secondItem="T5N-xc-sVz" secondAttribute="width" id="d4x-tK-Odu"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="height" secondItem="T5N-xc-sVz" secondAttribute="height" id="kdJ-1C-vWq"/>
+                                    <constraint firstItem="OJJ-lv-gW6" firstAttribute="top" secondItem="exB-ZS-1U0" secondAttribute="bottom" constant="10" id="lzx-6x-G1s"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -186,7 +189,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="366"/>
+            <point key="canvasLocation" x="161.5" y="365.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="offset" width="326" height="346"/>
+        <image name="quavo" width="326" height="346"/>
+        <image name="takeoff" width="326" height="346"/>
+    </resources>
 </document>
