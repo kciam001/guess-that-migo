@@ -1,6 +1,6 @@
 //
 //  Question.swift
-//  Quizzler
+//  GuessThatMigo
 //
 //  Created by Kevin Ciampaglia on 1/22/18.
 //  Copyright © 2018 London App Brewery. All rights reserved.

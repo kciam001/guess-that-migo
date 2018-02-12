@@ -1,6 +1,6 @@
 //
 //  QuestionBank.swift
-//  Quizzler
+//  guessthatmigo
 //
 //  Created by Kevin Ciampaglia on 1/23/18.
 //  Copyright © 2018 London App Brewery. All rights reserved.
@@ -14,23 +14,23 @@ class QuestionBank {
     
     init(){
         // Creating a quiz item and appending it to the list
-        let item = Question(text: "Valentine\'s day is banned in Saudi Arabia.", correctAnswer: "Quavo")
+        let item = Question(text: "Hop in the Lamb, have a drag race (skrt) \n I let them birds take a bath, bae brr )", correctAnswer: "Offset")
         
         // Add the Question to the list of questions
         list.append(item)
         
         // skipping one step and just creating the quiz item inside the append function
-        list.append(Question(text: "A slug\'s blood is green.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Young nigga poppin' with a pocket full of cottage (ayy)\n Woah kemosabe, chopper aimin' at your noggin ayy", correctAnswer: "Takeoff"))
         
-        list.append(Question(text: "Approximately one quarter of human bones are in the feet.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Mama asked me, \"Son, when the trappin\' gon\' quit?\" \n I been ridin' round through the city in my new bitch", correctAnswer: "Offset"))
         
-        list.append(Question(text: "The total surface area of two human lungs is approximately 70 square metres.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Uh, ooh, fresh out the bed \n Uh, ooh, count up the deads \n Uh, ooh, fresh out the bed \n Uh, ooh, Uh, ooh, count up the deads", correctAnswer: "Quavo"))
         
-        list.append(Question(text: "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", correctAnswer: "Quavo"))
+        list.append(Question(text: "I gave her her first Philippe (Philippe) \n We goin' full throttle, she swallowed the bottle \n I'm all in her ovaries (eghhh)", correctAnswer: "Offset"))
         
-        list.append(Question(text: "In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.", correctAnswer: "Quavo"))
+        list.append(Question(text: "She swallowed the bottle while I sit back and smoke gelato \n Walk in my mansion, twenty \n thousand painting, Picasso \n Bitches be dippin', dabbin' with niggas like a nacho", correctAnswer: "Offset"))
         
-        list.append(Question(text: "It is illegal to pee in the Ocean in Portugal.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Hot boy, hot boy, hot boy, hot boy, hot boy \n Hot boy, hot boy, hot boy, hot boy, hot boy", correctAnswer: "Quavo"))
         
         list.append(Question(text: "You can lead a cow down stairs but not up stairs.", correctAnswer: "Quavo"))
         
