@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4251E509203299FC00AB3293 /* cookie.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4251E508203299FC00AB3293 /* cookie.wav */; };
+		4251E50B20329C9100AB3293 /* hey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4251E50A20329C9000AB3293 /* hey.wav */; };
+		4251E50D20329D8200AB3293 /* skrrt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4251E50C20329D8200AB3293 /* skrrt.wav */; };
+		4251E50F20355EB400AB3293 /* skrrt2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4251E50E20355EB300AB3293 /* skrrt2.wav */; };
 		42D89C4B201690A30023A133 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D89C4A201690A30023A133 /* Question.swift */; };
 		42D89C4D201829DC0023A133 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D89C4C201829DC0023A133 /* QuestionBank.swift */; };
 		42D89C52201840C50023A133 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42D89C4F201840C40023A133 /* ProgressHUD.bundle */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4251E508203299FC00AB3293 /* cookie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cookie.wav; sourceTree = SOURCE_ROOT; };
+		4251E50A20329C9000AB3293 /* hey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hey.wav; sourceTree = SOURCE_ROOT; };
+		4251E50C20329D8200AB3293 /* skrrt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skrrt.wav; sourceTree = SOURCE_ROOT; };
+		4251E50E20355EB300AB3293 /* skrrt2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skrrt2.wav; sourceTree = SOURCE_ROOT; };
 		42D89C4A201690A30023A133 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		42D89C4C201829DC0023A133 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		42D89C4E201840C30023A133 /* Quizzler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzler-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -45,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4251E5032032987000AB3293 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				4251E50E20355EB300AB3293 /* skrrt2.wav */,
+				4251E50C20329D8200AB3293 /* skrrt.wav */,
+				4251E50A20329C9000AB3293 /* hey.wav */,
+				4251E508203299FC00AB3293 /* cookie.wav */,
+			);
+			name = "Sound Files";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		633646B01B8C657400FF45E2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +84,7 @@
 		633646BB1B8C657400FF45E2 /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
+				4251E5032032987000AB3293 /* Sound Files */,
 				EBB1C72D1B946C580011F5C3 /* Controller */,
 				EBB1C72C1B946C530011F5C3 /* Model */,
 				EBB1C72B1B946C4B0011F5C3 /* View */,
@@ -175,7 +196,11 @@
 				42D89C52201840C50023A133 /* ProgressHUD.bundle in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
+				4251E50B20329C9100AB3293 /* hey.wav in Resources */,
+				4251E50D20329D8200AB3293 /* skrrt.wav in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
+				4251E50F20355EB400AB3293 /* skrrt2.wav in Resources */,
+				4251E509203299FC00AB3293 /* cookie.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

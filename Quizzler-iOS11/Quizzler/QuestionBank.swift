@@ -32,16 +32,25 @@ class QuestionBank {
         
         list.append(Question(text: "Hot boy, hot boy, hot boy, hot boy, hot boy \n Hot boy, hot boy, hot boy, hot boy, hot boy", correctAnswer: "Quavo"))
         
-        list.append(Question(text: "You can lead a cow down stairs but not up stairs.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Karate chop that nigga like it's martial-arts", correctAnswer: "Offset"))
         
-        list.append(Question(text: "Google was originally called \"Backrub\".", correctAnswer: "Quavo"))
+        list.append(Question(text: "Up early in the morning trapping /n You can get 'em how you asking \n How many chickens? you can get 'em whichever way /n Nigga, trap turned Zaxby's", correctAnswer: "Takeoff"))
         
-        list.append(Question(text: "Buzz Aldrin\'s mother\'s maiden name was \"Moon\".", correctAnswer: "Quavo"))
+        list.append(Question(text: "Bitch lookin\' like a Kardashian \n We hopped in the coupe and we smashin'/n Sippin' on my drink, watch that ass go slow motion /n Walkin' with that bag, look at my diamonds like the ocean", correctAnswer: "Quavo"))
         
-        list.append(Question(text: "The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Nah you don't want no drama boy \n I'll eat a nigga ass like an Almond Joy", correctAnswer: "Quavo"))
         
-        list.append(Question(text: "No piece of square dry paper can be folded in half more than 7 times.", correctAnswer: "Quavo"))
+        list.append(Question(text: "Icy Patek, check, yeah, boogers, they sit on my neck (ice)", correctAnswer: "Offset"))
         
-        list.append(Question(text: "Chocolate affects a dog\'s heart and nervous system; a few ounces are enough to kill a small dog.", correctAnswer: "Quavo"))
+        list.append(Question(text: "The sauce, my hoe, I look at the niggas like shrimp Fuck these niggas, these niggas ain't come from the NAWF (NAWF)", correctAnswer: "Offset"))
+        
+        list.append(Question(text: "My pinky on margarine, butter (margarine)", correctAnswer: "Offset"))
+        
+        list.append(Question(text: "If Nicki should show me her titty Right hand on the Bible, I swear I won't tell (swear)", correctAnswer: "Takeoff"))
+        
+        list.append(Question(text: "Public Service Announcement Where all my rich niggas at, man?", correctAnswer: "Takeoff"))
+        
+        
+        
     }
 }
